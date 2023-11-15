@@ -4,7 +4,7 @@ import numpy as np
 def videoPlayback(video, loop, autostart):
     video_bytes = video.read()
 
-    video_base64 = base64.b64encode(video_bytes).deco   de('utf-8')
+    video_base64 = base64.b64encode(video_bytes).decode('utf-8')
 
     if loop == True and autostart == True:
         video_html = f"""
